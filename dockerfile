@@ -4,9 +4,7 @@ from debian:sid
 workdir /app
 
 # get whatever apt packages we need
-run apt-get update
-run apt-get install -y aptitude
-run aptitude install -y \
+run apt-get update && apt-get install -y aptitude && aptitude install -y \
   bison \
   bsdmainutils \
   build-essential \
