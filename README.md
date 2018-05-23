@@ -13,3 +13,6 @@ Maud is for people who like to tinker with NetHack and who have amnesia.  Maud i
 `sudo bash dev`
 
 Have fun and send patches!
+
+### Known limitations
+Save files do not persist yet
