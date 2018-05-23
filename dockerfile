@@ -8,16 +8,15 @@ run apt-get update
 run apt-get install -y aptitude
 # is util-linux really needed?
 run aptitude install -y \
-  build-essential \
-  ncurses-dev \
-  util-linux \
   bison \
   bsdmainutils \
+  build-essential \
+  flex \
+  gdb \
   git \
-  vim
-# TODO: consolidate apt commands
-run aptitude install -y flex
-run aptitude install -y gdb
+  ncurses-dev \
+  vim \
+  util-linux
 
 run useradd -ms /bin/bash kewluser
 user kewluser
