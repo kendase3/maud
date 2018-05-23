@@ -6,7 +6,6 @@ workdir /app
 # get whatever apt packages we need
 run apt-get update
 run apt-get install -y aptitude
-# is util-linux really needed?
 run aptitude install -y \
   bison \
   bsdmainutils \
@@ -15,8 +14,7 @@ run aptitude install -y \
   gdb \
   git \
   ncurses-dev \
-  vim \
-  util-linux
+  vim
 
 run useradd -ms /bin/bash kewluser
 user kewluser
