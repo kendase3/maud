@@ -1,5 +1,5 @@
-# <3 sid
-from debian:sid
+# testing is ok
+from debian:testing
 
 workdir /app
 
